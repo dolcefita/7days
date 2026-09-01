@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="8 дней со мной: время, чтобы начать заботиться о себе с простых шагов и личным сопровождением.">
+  <title>8 дней со мной — Юля</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#292524;--muted:#6f6966;--rose:#d88f9f;--rose-dark:#b9677b;--rose-soft:#f8e9ed;--cream:#fffaf7;--line:#eadfda;--white:#fff;--shadow:0 18px 50px rgba(80,48,50,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:Manrope,Arial,sans-serif;font-size:16px;line-height:1.65}a{color:inherit}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}.serif{font-family:"Cormorant Garamond",serif}.eyebrow{margin:0 0 18px;color:var(--rose-dark);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.btn{display:inline-flex;min-height:54px;align-items:center;justify-content:center;padding:0 30px;border-radius:999px;background:var(--rose-dark);color:#fff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.04em;box-shadow:0 10px 24px rgba(185,103,123,.22);transition:.2s}.btn:hover{background:#a8566b;transform:translateY(-1px)}
+    header{position:absolute;z-index:2;top:0;left:0;width:100%;padding:24px 0}.brand{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600}.hero{min-height:690px;display:grid;align-items:center;background:linear-gradient(105deg,#fff 0%,#fff 52%,var(--rose-soft) 52%,var(--cream) 100%);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center;padding:118px 0 80px}.hero-copy{max-width:590px}.hero h1{margin:0 0 22px;font-size:clamp(46px,6vw,76px);font-weight:500;line-height:.96;letter-spacing:-.025em}.hero h1 span{display:block;color:var(--rose-dark)}.lead{max-width:560px;margin:0 0 32px;color:#514c4a;font-size:18px;line-height:1.7}.hero-photo{position:relative;height:500px;border-radius:220px 220px 28px 28px;background:linear-gradient(145deg,#f7dce3,#f5efe9);box-shadow:var(--shadow);overflow:hidden}.hero-photo img{width:100%;height:100%;object-fit:cover}.hero-photo:after{content:"";position:absolute;inset:16px;border:1px solid rgba(255,255,255,.7);border-radius:205px 205px 20px 20px;pointer-events:none}
+    section{padding:88px 0}.center{text-align:center}.narrow{max-width:750px;margin:auto}.section-title{margin:0 0 24px;font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4vw,48px);font-weight:600;line-height:1.08}.intro{background:#fff}.intro-lines{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:30px auto}.intro-lines span{padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:14px}.statement{margin:30px 0 0;padding:24px;border-radius:18px;background:var(--rose-soft);font-size:19px;font-weight:600}.product{background:var(--cream)}.product-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center;padding:48px 54px;border:1px solid var(--line);border-radius:30px;background:#fff;box-shadow:var(--shadow)}.product-mark{display:grid;place-items:center;aspect-ratio:1;border-radius:50%;background:var(--rose-soft);text-align:center}.product-mark strong{display:block;font-family:"Cormorant Garamond",serif;font-size:76px;line-height:.8;color:var(--rose-dark)}.product-mark span{display:block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.product-copy p{margin:0 0 16px;color:var(--muted)}.product-copy p:last-child{margin:0}
+    .steps{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.card{padding:30px 26px;border:1px solid var(--line);border-radius:22px;background:#fff}.num{display:grid;place-items:center;width:38px;height:38px;margin-bottom:20px;border-radius:50%;background:var(--rose-soft);color:var(--rose-dark);font-weight:700}.card h3{margin:0 0 10px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}.nodiet{padding:76px 0;background:var(--rose-soft)}.nodiet-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.nodiet p{margin:0;color:#5d5654}.nodiet strong{display:block;margin-top:22px;color:var(--rose-dark);font-size:18px}.result{background:#fff}.result-copy{font-size:18px;color:#56504e}.already{margin:34px 0 0;font-family:"Cormorant Garamond",serif;font-size:clamp(38px,5vw,58px);font-weight:600;color:var(--rose-dark)}
+    .about{background:var(--cream)}.about-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:64px;align-items:center}.about-photo{height:470px;border-radius:26px;background:linear-gradient(145deg,#f0ded9,#f9eef1);overflow:hidden}.about-photo img{width:100%;height:100%;object-fit:cover}.about-copy .quote{margin:0 0 22px;font-family:"Cormorant Garamond",serif;font-size:31px;font-weight:600;line-height:1.18}.about-copy p{margin:0 0 17px;color:var(--muted)}.about-copy .name{color:var(--ink);font-weight:700}
+    .offer{padding:92px 0;background:#fff}.offer-box{position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;padding:58px 62px;border-radius:30px;background:var(--rose-soft)}.offer-box:after{content:"";position:absolute;right:-80px;top:-120px;width:320px;height:320px;border:1px solid rgba(185,103,123,.22);border-radius:50%}.offer h2{margin-bottom:14px}.offer-copy p{margin:0;color:#665c5b}.price-card{position:relative;z-index:1;padding:34px;border-radius:22px;background:#fff;text-align:center;box-shadow:var(--shadow)}.price-label{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.price{margin:8px 0 22px;font-family:"Cormorant Garamond",serif;font-size:54px;font-weight:600;line-height:1}.price small{font-family:Manrope,sans-serif;font-size:13px}.price-card .btn{width:100%}.micro{margin:14px 0 0!important;color:var(--muted)!important;font-size:12px}footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center}
+    @media(max-width:760px){.wrap{width:min(100% - 30px,600px)}header{padding:18px 0}.hero{min-height:auto;background:linear-gradient(180deg,#fff 0%,#fff 64%,var(--rose-soft) 64%,var(--cream) 100%)}.hero-grid{grid-template-columns:1fr;gap:40px;padding:100px 0 42px}.hero h1{font-size:51px}.lead{font-size:16px}.hero-photo{height:385px;max-width:390px;width:100%;margin:auto}.hero .btn{width:100%}section{padding:66px 0}.section-title{font-size:36px}.statement{font-size:16px}.product-box{grid-template-columns:1fr;padding:30px 24px;gap:30px}.product-mark{width:190px;margin:auto}.product-mark strong{font-size:64px}.cards{grid-template-columns:1fr}.card{display:grid;grid-template-columns:46px 1fr;column-gap:12px}.card .num{grid-row:1/3;margin:0}.card h3,.card p{grid-column:2}.nodiet-grid,.about-grid,.offer-box{grid-template-columns:1fr;gap:32px}.nodiet{padding:60px 0}.about-photo{height:390px}.about-copy .quote{font-size:28px}.offer{padding:64px 0}.offer-box{padding:36px 22px;border-radius:24px}.price{font-size:48px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><div class="brand">Юлия Дворецкая · @dolce.fita</div></div></header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">8 дней со мной</p>
+          <h1 class="serif">Начни <span>заботиться о себе</span></h1>
+          <p class="lead">Восемь дней, чтобы начать лучше себя чувствовать и лучше выглядеть — один простой шаг в день и моё сопровождение</p>
+          <a class="btn" href="#sumarme">ХОЧУ НАЧАТЬ</a>
+        </div>
+        <div class="hero-photo"><img src="hero.JPG" alt="Юля" onerror="this.style.display='none'"></div>
+      </div>
+    </section>
+
+    <section class="intro center">
+      <div class="wrap narrow">
+        <p class="eyebrow">Возможно, ты давно хочешь...</p>
+        <h2 class="section-title">Заняться собой, лучше себя чувствовать и лучше выглядеть</h2>
+        <div class="intro-lines"><span>Лучше питаться</span><span>Больше двигаться</span><span>Иметь больше энергии</span><span>Делать что-то для себя</span></div>
+        <p>Но когда думаешь обо всём, что нужно изменить, кажется, что этого слишком много.</p>
+        <p class="statement">Не обязательно делать всё сразу</p>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="wrap product-box">
+          <div class="product-mark"><div><strong>8</strong><span>дней вместе</span></div></div>
+        <div class="product-copy">
+          <p class="eyebrow">8 дней со мной</p>
+          <h2 class="section-title">Восемь дней, чтобы начать</h2>
+          <p>Каждый день ты будешь получать одно небольшое и конкретное задание, которое можно применить в своей реальной жизни.</p>
+          <p><strong>Без попыток делать всё идеально</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps center">
+      <div class="wrap">
+        <p class="eyebrow">Как это работает</p>
+        <h2 class="section-title">Просто и выполнимо</h2>
+        <div class="cards">
+          <article class="card"><div class="num">1</div><h3>Получаешь</h3><p>Короткое объяснение и одно простое действие на этот день.</p></article>
+          <article class="card"><div class="num">2</div><h3>Применяешь</h3><p>Встраиваешь это в свою жизнь, с твоим расписанием и тем временем, которое у тебя действительно есть.</p></article>
+          <article class="card"><div class="num">3</div><h3>Я сопровождаю</h3><p>Ты рассказываешь, как всё прошло, показываешь, что делаешь, и получаешь мою обратную связь.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="nodiet">
+      <div class="wrap nodiet-grid">
+        <h2 class="section-title">Здесь мы не будем начинать очередную диету</h2>
+        <div><p>Тебе не придётся отказываться от хлеба, считать каждую калорию, готовить себе отдельное меню или тренироваться по часу в день.</p><strong>Мы будем работать с твоей жизнью такой, какая она есть сейчас</strong></div>
+      </div>
+    </section>
+
+    <section class="result center">
+      <div class="wrap narrow">
+        <p class="eyebrow">После этих восьми дней</p>
+        <p class="result-copy">Ты будешь лучше понимать, как составлять свои приёмы пищи, снова начнёшь двигаться и увидишь, какие небольшие изменения работают именно для тебя.</p>
+        <p class="already">И самое главное — ты сможешь сказать: «Я уже начала»</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap about-grid">
+        <div class="about-photo"><img src="julia.JPG" alt="Юля, нутрициолог и тренер" onerror="this.style.display='none'"></div>
+        <div class="about-copy">
+          <p class="eyebrow">Настоящее сопровождение</p>
+          <p class="quote">Одно дело знать, а совсем другое — применять</p>
+          <p>Информации о питании и тренировках полно повсюду. В течение этих восьми дней ты можешь показывать мне, что делаешь, и получать обратную связь именно для тебя.</p>
+          <p class="name">Я Юля, нутрициолог и тренер.</p>
+          <p>Я работаю с женщинами, которые хотят лучше себя чувствовать и лучше выглядеть, но не хотят жить на диетах и проводить часы на тренировках.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="sumarme">
+      <div class="wrap offer-box">
+        <div class="offer-copy">
+          <p class="eyebrow">8 дней со мной</p>
+          <h2 class="section-title">Начни заботиться о себе с простых шагов</h2>
+          <p>Восемь дней с моим сопровождением, чтобы применить всё в твоей реальной жизни</p>
+        </div>
+        <div class="price-card">
+          <div class="price-label">Твои восемь дней со мной</div>
+          <div class="price">888 <small>₽</small></div>
+          <a class="btn" href="https://t.me/m/hraFXwZFOWNl" target="_blank" rel="noopener" aria-label="Присоединиться к программе 8 дней со мной в Telegram">ХОЧУ ПРИСОЕДИНИТЬСЯ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© Юля · Нутрициолог и тренер</div></footer>
+</body>
+</html>
